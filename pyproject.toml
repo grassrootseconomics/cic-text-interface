@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "cic-text-interface"
+version = "0.1.0"
+description = "A generic text based interface for interacting with Kitabu chain and Community Currencies."
+authors = ["Mango Habanero <main@mangohabanero.dev>"]
+
+[[tool.poetry.source]]
+name = "grassroots economics"
+url = "https://pip.grassrootseconomics.net/"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.78.0"
+uvicorn = "^0.17.6"
+SQLAlchemy = "^1.4.37"
+confini = "^0.6.1"
+pydantic = "^1.9.1"
+alembic = "^1.8.0"
+redis = "^4.3.3"
+cic-types = "^0.2.2"
+celery = "4.4.7"
+
+
+
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
